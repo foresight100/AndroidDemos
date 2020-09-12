@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.mxn.soul.flowingdrawer_core.FlowingDrawer
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/balloon"
+    android:clipChildren="false"
+    android:clipToPadding="false"
+    app:edPosition="1"
+    app:edMenuSize="300dp"
+    tools:context="WelCome2.Main2Activity">
+
+    <!--content-->
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#00000000"
+            >
+        </android.support.design.widget.AppBarLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/menu_image"
+                android:layout_width="52dp"
+                android:layout_height="51dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="35dp"
+                android:background="@drawable/menu"
+                tools:ignore="ContentDescription,HardcodedText,RtlHardcoded,SpUsage" />
+
+            <ImageView
+                android:id="@+id/photo_image"
+                android:layout_width="52dp"
+                android:layout_height="52dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/photo"
+                android:layout_marginLeft="165dp"
+                tools:ignore="ContentDescription,RtlHardcoded" />
+
+            <ImageView
+                android:id="@+id/me_image"
+                android:layout_width="52dp"
+                android:layout_height="51dp"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="300dp"
+                android:background="@drawable/me"
+                tools:ignore="ContentDescription,HardcodedText,RtlHardcoded,SpUsage" />
+        </FrameLayout>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <!--menu-->
+    <com.mxn.soul.flowingdrawer_core.FlowingMenuLayout
+        android:id="@+id/menulayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/id_container_menu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.mxn.soul.flowingdrawer_core.FlowingMenuLayout>
+
+</com.mxn.soul.flowingdrawer_core.FlowingDrawer>
